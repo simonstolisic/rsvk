@@ -1,6 +1,6 @@
 <h1 align="center">
     <a href="https://github.com/shellmonk/rsvk">
-    <img src="./.github/assets/banner.jpg" width="100" height="100">
+    <img src="./.github/assets/banner.jpg">
     </a>
     <br />
     rsvk (Ruke Su Vam Krvave)
