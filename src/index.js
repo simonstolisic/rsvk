@@ -1,22 +1,13 @@
 import './styles.css';
 
 function changeTimezone(date, ianatz) {
-
-  // suppose the date is 12:00 UTC
   var invdate = new Date(date.toLocaleString('en-US', {
     timeZone: ianatz
   }));
 
-  // then invdate will be 07:00 in Toronto
-  // and the diff is 5 hours
   var diff = date.getTime() - invdate.getTime();
-
-  // so 12:00 in Toronto is 17:00 UTC
-  return new Date(date.getTime() - diff); // needs to substract
-
+  return new Date(date.getTime() - diff);
 }
-
-// E.g.
 
 
 window.onload = function() {
@@ -24,23 +15,16 @@ window.onload = function() {
 
     const belgradeTime = changeTimezone(new Date(), "Europe/Belgrade");
 
-
-    // const timezone = "Europe/Belgrade";
-    // const now = new Date();
-    // const d = new Date(Intl.DateTimeFormat('rs', {timeZone: timezone}).format(now));
-
-    // var d = new Date(new Date().toLocaleString("rs", {timeZone: "Europe/Belgrade"}));
-
-    const popupOn = 11 * 60 + 52 // minutes
-    const popupOff = 12 * 60 + 7 // minutes
-    const currentTime = belgradeTime.getHours() * 60 + belgradeTime.getMinutes(); // Minutes since Midnight
+    const popupOn = 11 * 60 + 52;
+    const popupOff = 12 * 60 + 7;
+    const currentTime = belgradeTime.getHours() * 60 + belgradeTime.getMinutes();
 
     if(currentTime < popupOn || currentTime > popupOff) { 
         return;
     }
 
     let div = document.createElement('div');
-    div.id = 'dedictator';
+    div.id = 'rsvk';
 
     const text = tr();
 
