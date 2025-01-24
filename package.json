@@ -1,0 +1,30 @@
+{
+    "name": "rsvk",
+    "version": "0.0.1",
+    "description": "Support anti-corruption protests in Serbia by adding rsvk to your website",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/shellmonk/rsvk.git"
+    },
+    "keywords": [],
+    "author": "Srdjan Djordjevic <root@shellmonk.io>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/shellmonk/rsvk/issues"
+    },
+    "homepage": "https://github.com/shellmonk/rsvk#readme",
+    "devDependencies": {
+      "css-loader": "^7.1.2",
+      "mini-css-extract-plugin": "^2.9.2",
+      "postcss-loader": "^8.1.1",
+      "style-loader": "^4.0.0",
+      "webpack": "^5.97.1",
+      "webpack-cli": "^6.0.1"
+    }
+  }
+  
