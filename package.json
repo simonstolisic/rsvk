@@ -1,6 +1,6 @@
 {
     "name": "@shellmonk/rsvk",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Support anti-corruption protests in Serbia by adding rsvk to your website",
     "main": "index.js",
     "scripts": {

@@ -21,7 +21,7 @@ Overlay will be visible on your website from 11:52 to 12:07 CEST.
 Just add
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@shellmonk/rsvk@0.0.4/dist/rsvk.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@shellmonk/rsvk@0.0.5/dist/rsvk.min.js"></script>
 ```
 
 to your website.

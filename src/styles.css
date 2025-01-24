@@ -66,3 +66,13 @@
 .rsvk-popup-content-text a:active { 
     text-decoration: none; 
 }
+
+.rsvk-popup-footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    height: 20px;
+    padding-top: 50px;
+    color: #a9a9a9;
+    align-items: center;
+    align-content: center;
+}

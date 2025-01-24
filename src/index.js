@@ -37,7 +37,10 @@ window.onload = function() {
                 <div class="rsvk-popup-content-text">
                 <h1>11:52 - 12:07 CEST</h1>
                 ${text}
-                
+                    
+                </div>
+                <div class="rsvk-popup-footer">
+                    <p>Powered by <a href="https://github.com/shellmonk/rsvk">rsvk</a></p>
                 </div>
             </div>
         </div>
