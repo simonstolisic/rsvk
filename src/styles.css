@@ -1,8 +1,5 @@
 :root {
-    --primary-gradient: linear-gradient(135deg, #4F46E5, #7C3AED);
-    --secondary-gradient: linear-gradient(135deg, #3B82F6, #2563EB);
     --text-color: #FFFFFF;
-    --bg-color: #030303;
 }
 
 
@@ -22,24 +19,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.7);
-    parsvking: 40px;
+    padding: 40px;
     width: 90%;
     min-width: 500px;
     z-index: 1001;
 }
 
 .rsvk-popup-content {
-    position: relative;
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
     color: var(--text-color);
 }
 
 .rsvk-popup-content-text {
-    parsvking: 20px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -50,6 +46,7 @@
 
 .rsvk-popup-content h1 {
     font-size: xx-large;
+    text-align: center;
 }
 
 .rsvk-popup-content-text a {
