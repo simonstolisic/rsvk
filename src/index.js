@@ -1,29 +1,26 @@
 import './styles.css';
 
-function changeTimezone(date, ianatz) {
-  var invdate = new Date(date.toLocaleString('en-US', {
-    timeZone: ianatz
-  }));
+import { TZDateMini } from "@date-fns/tz";
+import { isWithinInterval, setHours, setMinutes } from "date-fns";
 
-  var diff = date.getTime() - invdate.getTime();
-  return new Date(date.getTime() - diff);
+const POPUP_START_HOUR = 11;
+const POPUP_START_MINUTE = 52;
+const POPUP_END_HOUR = 12;
+const POPUP_END_MINUTE = 7;
+const timeZone = "Europe/Belgrade";
+
+function shouldShowPopup() {
+    const now = new TZDateMini(new Date(), timeZone);
+    const popupOnTime = setMinutes(setHours(now, POPUP_START_HOUR), POPUP_START_MINUTE);
+    const popupOffTime = setMinutes(setHours(now, POPUP_END_HOUR), POPUP_END_MINUTE);
+    return isWithinInterval(now, {start: popupOnTime, end: popupOffTime});
 }
 
-
-window.onload = function() {
-
-
-    const belgradeTime = changeTimezone(new Date(), "Europe/Belgrade");
-
-    const popupOn = 11 * 60 + 52;
-    const popupOff = 12 * 60 + 7;
-    const currentTime = belgradeTime.getHours() * 60 + belgradeTime.getMinutes();
-
-    if(currentTime < popupOn || currentTime > popupOff) { 
+window.onload = function () {
+    if (!shouldShowPopup()) {
         return;
     }
-
-    let div = document.createElement('div');
+    const div = document.createElement('div');
     div.id = 'rsvk';
 
     const text = tr();

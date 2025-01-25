@@ -2,6 +2,12 @@
     --text-color: #FFFFFF;
 }
 
+#rsvk {
+    all: initial;
+    * {
+        all: revert;
+    }
+}
 
 .rsvk-overlay {
     position: fixed;
