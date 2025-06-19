@@ -14,7 +14,7 @@ Corruption of the ruling party killed 16 people and injured 1 more in Novi Sad o
 
 Help us fight the corrupt system and spread the word.
 
-Overlay will be visible on your website from 11:52 to 12:07 CEST.
+Overlay will be visible on your website from 11:52 to 12:08 CEST.
 
 ## Usage
 
